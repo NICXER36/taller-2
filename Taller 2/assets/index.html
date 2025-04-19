@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino - Reservaciones</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Destino</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#reservaciones">Reservaciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Elige tu playa favorita ahora</h1>
+                <p>
+                    Disfruta de las mejores playas y experiencias únicas en nuestros destinos paradisíacos.
+                    Reserva ahora y vive una experiencia inolvidable.
+                </p>
+                <a href="#reservaciones" class="btn-1">Reservar Ahora</a>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="img/1.jpg" alt="Playa paradisíaca">
+                    <h3>Playa</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/2.jpg" alt="Hotel de lujo">
+                    <h3>Hotel</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/3.jpg" alt="Naturaleza">
+                    <h3>Naturaleza</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/4.jpg" alt="Canoas">
+                    <h3>Canoas</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/5.jpg" alt="Lanchas">
+                    <h3>Lanchas</h3>
+                </div>
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-prev">←</button>
+                <button class="gallery-next">→</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="reservaciones" class="reservaciones">
+        <div class="container">
+            <h2>Reserva tu experiencia</h2>
+            <form id="formulario-reservacion" class="formulario-reservacion">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de reservación</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="personas">Número de personas</label>
+                    <input type="number" id="personas" name="personas" min="1" max="10" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="comentarios">Comentarios adicionales</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-1">Confirmar Reservación</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
